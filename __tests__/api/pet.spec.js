@@ -43,4 +43,12 @@ describe('Pet Store Swagger - Pet', () => {
                 assert.equal(resposta.body.status,"solded");
             });
     });
+
+    it('DELETE - Excluir Pet', () => {
+        return request
+            .delete("/pet/"+petId)
+            .then(resposta =>{
+                assert.equal(resposta.statusCode,200)
+            })
+    })
 });
