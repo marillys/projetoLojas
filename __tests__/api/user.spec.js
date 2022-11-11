@@ -3,11 +3,11 @@ const assert = require("chai").assert;
 
 const userId = 1515;
 const username = "marilia";
-const token = ";"
+let token = ";"
 
 describe('PetSore Swagger - User', () => {
     const request = supertest("https://petstore.swagger.io/v2")
-    it.only('POST User', () => {
+    it('POST User', () => {
         const json = require("../../vendors/user1.json")
         return request
             .post("/user")
@@ -55,7 +55,7 @@ describe('PetSore Swagger - User', () => {
             })
     });
 
-    it.only('Login com extração do token', () => {
+    it('Login com extração do token', () => {
         const username = "marilia";
         const password = "654321"
 
