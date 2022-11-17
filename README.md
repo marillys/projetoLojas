@@ -6,6 +6,8 @@ Swagger: https://petstore.swagger.io/
 Instale o node;
 Instale o jest, supertest, mocha e o chai
     npm install jest supertest mocha chai --save-dev
+Instalar o Selenium, chrome 
+    npm install --save-dev selenium-webdriver chromedriver
 
 Executar os testes
 Digite o código abaixo no terminal
