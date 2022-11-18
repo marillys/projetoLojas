@@ -1,5 +1,5 @@
 const { Builder, By } = require("selenium-webdriver")
-const {assert} = require("chai").assert
+const {assert} = require("chai")
 const chromedriver = require("chromedriver")
 
 describe('Comprar passagem via Programação', () => {
@@ -34,6 +34,4 @@ describe('Comprar passagem via Programação', () => {
         driver.sleep(5000)
         assert.equal(await driver.getTitle(), "BlazeDemo - reserve") 
     })
-
-    
 })
