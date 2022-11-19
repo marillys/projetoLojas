@@ -18,3 +18,6 @@ npm run test
 
 Executar só a feature
 npm run cucumber
+
+Executar e gerr um relatório
+npx cucumber-js --publish
