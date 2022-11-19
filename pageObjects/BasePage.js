@@ -3,7 +3,7 @@ class BasePage{
         this.driver = driver;
     }
 
-    async LerTituloGuia(){
+    async lerTituloGuia(){
         return await this.driver.getTitle();
     }
 }

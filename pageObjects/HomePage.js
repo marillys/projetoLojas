@@ -18,10 +18,10 @@ class HomePage extends BasePage{
 
     async selecionarOrigemDestinoVoo(origem, destino){
         let ddOrigem = await this.driver.findElement(this.dropdownOrigem);
-        await ddOrigem.findElement(By.css(`[value]${origem}`))
+        await ddOrigem.findElement(By.css(`[value="${origem}"]`)).click()
         
         let ddDestino = await this.driver.findElement(this.dropdownDestino);
-        await ddDestino.findElement(By.css(`[value]${destino}`))
+        await ddDestino.findElement(By.css(`[value="${destino}"]`)).click()
 
         await this.driver.findElement(this.btnProcurarVoos).click();
     }

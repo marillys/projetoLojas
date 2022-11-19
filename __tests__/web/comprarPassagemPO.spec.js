@@ -2,10 +2,11 @@ const HomePage = require("../../pageObjects/HomePage")
 const webdriver = require("selenium-webdriver")
 const chrome = require("selenium-webdriver/chrome")
 const assert = require("chai").assert;
+require("chromedriver")
 
 describe("Comprar Passagem via Blazedemo - Page Object", () => {
     let driver;
-    const chOptions = new chrome.Options();
+    const chOptions = new chrome.Options().headless();
 
     beforeEach(() => {
         driver = new webdriver.Builder()
@@ -25,7 +26,7 @@ describe("Comprar Passagem via Blazedemo - Page Object", () => {
         await driver.get("https://www.blazedemo.com");
         const homePage = new HomePage(driver);
         await homePage.selecionarOrigemDestinoVoo("Boston","Dublin")
-        assert.equal(await homePage.LerTituloGuia(),"Blazedemo - reserve")
+        assert.equal("BlazeDemo - reserve",await homePage.lerTituloGuia())
         await homePage.driver.sleep(3000)
     })
 })
