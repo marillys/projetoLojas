@@ -1,8 +1,8 @@
 # Projeto Lojas
 
 Projeto das aulas de testes unitários, WEB e de API com JavaScript do curso de formação em Teste de Software (FTS-135). 
-A [pasta](/src/) contém exemplos de testes unitários para uma calculadora.
-A pasta de testes [WEB](__tests__/web) contém a automação para a compra de passagens do site blazeDemo (testes usando código gerado via selenium IDE, outro com programação orientada a objetos e outros usando o cucumber). Já os testes de [API](__tests__/api) validam as 4 operações básicas (GET, PUT e DELETE) de usuários e pets. O [Swagger da PetStore](https://petstore.swagger.io/) usado nos testes de API.
+A [pasta src][teste_unitario] contém exemplos de testes unitários para uma calculadora.
+A pasta de testes [WEB][web] contém a automação para a compra de passagens do site blazeDemo (testes usando código gerado via selenium IDE, outro com programação orientada a objetos e outros usando o cucumber). Já os testes de [API][api] validam as 4 operações básicas (GET, PUT e DELETE) de usuários e pets. O [Swagger da PetStore][swagger_PetStore] usado nos testes de API.
 
 ## 🛠 Tecnologias
 
@@ -42,3 +42,7 @@ npm run cucumber
 # Executar e gerar um relatório
 npx cucumber-js --publish
 ```
+[teste_unitario]:/src/
+[web]:__tests__/web
+[api]:__tests__/api
+[swagger_PetStore]:https://petstore.swagger.io/
